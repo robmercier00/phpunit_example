@@ -1,7 +1,7 @@
 <?php
-use PHPUnit\Framework\TestCase;
+namespace Calculator;
 
-require 'Calculator.php';
+use PHPUnit\Framework\TestCase;
 
 class CalculatorTest extends TestCase
 {
@@ -9,6 +9,7 @@ class CalculatorTest extends TestCase
 
     protected function setUp() :void
     {
+        require_once 'Calculator.php';
         $this->calculator = new Calculator();
     }
 
